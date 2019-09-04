@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>PakTours</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- CSS here -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/nice-select.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/meanmenu.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/icofont.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/default.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    </head>
+    <style>
+        ::placeholder {
+            color: white;
+            opacity: 1; /* Firefox */
+        }
+
+    </style>
+<body>
+    <div id="app">
+        <header class="header-area home-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <div class="logo">
+                            <a href="http://localhost:8000/index-2"><img src="{{ asset('img/logo/logo.png') }}" alt="logo"></a>
+                        </div>
+                    </div>
+                    
+
+                <div class="col-lg-9">
+                    <div class="basic-menu f-right">
+                        <nav id="mobile-menu">
+                            <ul>
+                                <li>
+                                    <a href="http://localhost:8000/index-2">HOME
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        
+        <section class="slider-area ">
+            
+            <div class="slider-wrapper">
+                <div class="slider-large-active">
+                    <div class="single-slider home-2" style="background: url({{ asset('/img/bg/slider.jpg') }});" data-overlay="6">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slider-search-form">
+                        <div>
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+
+    </div>
+
+    <!-- JS here -->
+        <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/jquery-1.12.4.min.js') }}"></script>
+        <script src="{{ asset('js/popper.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.nice-select.min.js') }}"></script>
+        <script src="{{ asset('js/slick.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.meanmenu.min.js') }}"></script>
+        <script src="{{ asset('js/ajax-form.js') }}"></script>
+        <script src="{{ asset('js/jquery-ui.js') }}"></script>
+        <script src="{{ asset('js/waypoint.js') }}"></script>
+        <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+        <script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('js/plugins.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
+</body>
+</html>
